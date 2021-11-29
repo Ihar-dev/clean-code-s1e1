@@ -50,16 +50,21 @@ ul {
 }
 
 li,
-h3 {
+.todo-section__heading,
+.completed-section__heading {
   list-style: none;
 }
 
 input,
-button{
+.incomplete-task__button,
+.completed-task__button,
+.wrapper__button {
   outline: none;
 }
 
-button {
+.incomplete-task__button,
+.completed-task__button,
+.wrapper__button {
   background: none;
   border: 0px;
   color: #888;
@@ -69,13 +74,16 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.incomplete-task__button:hover,
+.completed-task__button:hover,
+.wrapper__button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 
-h3,
+.todo-section__heading,
+.completed-section__heading,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -145,13 +153,15 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+.incomplete-task__image,
+.completed-task__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.incomplete-task__image:hover,
+.completed-task__image:hover {
   transform: rotateZ(0);
 }
 
