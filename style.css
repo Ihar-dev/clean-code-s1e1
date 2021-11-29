@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header-container .more-info {
+.header-container .header-container__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-section__wrapper {
   display: flex;
 }
 
@@ -157,7 +157,7 @@ button.delete img:hover {
 
 /* Completed */
 
-ul#completed-tasks label {
+ul.completed-section__completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
